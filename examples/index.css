@@ -1,53 +1,7 @@
-.grid-container-4-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
-}
-
-.grid-container-3-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-}
-
-.grid-item {
-  border: solid;
-  height: 150px;
-  width: 150px;
-  background-color: burlywood;
-}
-
-@media (max-width: 700px) {
-  .grid-container-4-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  /* .info1 {
-     grid-column: span 2;
-     grid-row: span 2;
-  }
-
-  .info2 {
-    grid-column: span 2;
-  }
-
-  .figure1 {
-    grid-column: span 3;
-    grid-row: span 2;
-  }
-  .figure6 {
-    grid-column: span 2;
-  }
-  .figure7 {
-    grid-column: span 3;
-  } */
-}
-
-/* Lesson 3 */
+/* Lesson 1 */
 /* grid styles ------------------------------------ */
 @media (min-width: 600px) {
-  .lesson-3 > main {
+  .example-1 > main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
@@ -87,7 +41,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.lesson-3 > header {
+.example-1 > header {
  padding: 10px;
 }
 
@@ -121,12 +75,12 @@
   color: white;
 }
 
-.lesson-3 > h2 {
+.example-1 > h2 {
   font-size: 2em;
   margin-bottom: 1em;
 }
 
-.lesson-3 > p {
+.example-1 > p {
   margin-bottom: 1em;
 }
 
@@ -135,8 +89,9 @@
   color: #ff9900;
 }
 
+/* Lesson 2 */
 /* holy grail */
-.holy-grail {
+.example-two {
   font-family: arial;
   display: flex;
   flex-direction: column;
@@ -145,15 +100,17 @@
 
 
 @media (min-width: 768px) {
-  .holy-grail {
+  .example-two {
     display: grid;
+    /* different ways to set up your grid template columns */
     grid-template-columns: 200px 1fr 200px;
+    /* see what happens when you change this */
     grid-template-rows: auto 1fr auto;
 
   }
 }
 
-.holy-grail > header {
+.example-two > header {
   grid-column: span 3;
   padding: 30px;
   text-align: center;
@@ -162,22 +119,25 @@
   color: white;
 }
 
-.holy-grail > main {
+.example-two > main {
+  grid-column: span 1;
   flex: 1;
   padding: 20px;
 }
 
-.holy-grail > nav {
+.example-two > nav {
+  grid-column: span 1;
   background-color: #f90;
   padding: 20px;
 }
 
-.holy-grail > aside {
+.example-two > aside {
+  grid-column: span 1;
   padding: 20px;
   background-color: #936;
 }
 
-.holy-grail > footer {
+.example-two > footer {
   grid-column: span 3;
   padding: 30px;
   text-align: center;
@@ -186,7 +146,7 @@
   color: white;
 }
 
-.holy-grail > h1 {
+.example-two > h1 {
   margin-bottom: 1em;
   font-size: 1.3em;
   font-weight: bold;
