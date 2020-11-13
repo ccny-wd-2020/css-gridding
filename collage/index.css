@@ -1,0 +1,58 @@
+.beatles-album-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-gap: 20px; */
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+#grid-item-1 {
+   grid-column: span 2;
+   grid-row: span 2;
+}
+
+#grid-item-2 {
+  grid-row: span 2;
+}
+
+#grid-item-3 {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+
+#grid-item-4 {
+  grid-row: span 2;
+}
+
+#grid-item-5 {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+#grid-item-6 {
+  grid-row: span 3;
+}
+
+#grid-item-7 {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+#grid-item-8 {
+  grid-column: span 3;
+  grid-row: span 2;
+  height: 300px;
+}
+
+
+/* @media (max-width: 700px) {
+  .grid-container-4-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+} */

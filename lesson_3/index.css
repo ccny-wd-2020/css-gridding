@@ -28,14 +28,18 @@
 /* starting on row1 and spanning 3 rows */
 /* a new row is created, so i have it span another row */
 #grid-item-9 {
-  grid-row: 1 / span 3;
+  grid-column: span 1;
+  grid-row: span 2;
+  height: 100%;
+  width: 80%;
 }
 
 /* starting on row1 and spanning 2 rows */
 /* Look at the google inspect and see how things shifted around */
-#grid-item-11 {
+
+/* #grid-item-11 {
   grid-row: 1 / span 2;
-}
+} */
 
 .grid-container-3-columns {
   display: grid;
