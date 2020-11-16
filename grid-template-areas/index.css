@@ -1,0 +1,76 @@
+body {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  background-color: #242e33;
+}
+
+main {
+  display: grid;
+  /* https://stackoverflow.com/questions/36876770/css-what-is-best-to-use-for-this-case-px-vw-wh-or-em */
+  height: 100vh;
+
+  /*
+    The grid-template-areas property specifies areas within the grid layout.
+    You can name grid items by using the grid-area property (view below), and then reference to the name in the grid-template-areas property.
+    Each area is defined by apostrophes. Use a period sign to refer to a grid item with no name.
+    Keep changing the areas here. See what happens.
+  */
+  grid-template-areas:
+  "one two three three"
+  "one five five four"
+  "one five five six";
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1vh;
+  grid-row-gap: 1vh;
+  grid-template-rows: 20% 1fr 20%;
+}
+
+/* for every child of the main html attributed */
+main > * {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Roboto';
+  font-size: 5vh;
+
+  border: solid black;
+  color: white
+}
+
+/* look at where the grid area of 'one' is being used in the grid-template-areas above */
+#item-one {
+  background-color: #0ef161;
+  grid-area: one;
+}
+
+/* look at where the grid area of 'two' is being used in the grid-template-areas above */
+#item-two {
+  background-color: #3494cb;
+  grid-area: two;
+}
+
+/* look at where the grid area of 'three' is being used in the grid-template-areas above */
+#item-three {
+  background-color: #ca2ed1;
+  grid-area: three;
+}
+
+/* look at where the grid area of 'four' is being used in the grid-template-areas above */
+#item-four {
+  background-color: #dfd820;
+  grid-area: four;
+}
+
+/* look at where the grid area of 'five' is being used in the grid-template-areas above */
+#item-five {
+  background-color: #e1811e;
+  grid-area: five;
+}
+
+/* look at where the grid area of 'six' is being used in the grid-template-areas above */
+#item-six {
+  background-color: #e2421d;
+  grid-area: six;
+}
