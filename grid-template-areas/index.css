@@ -23,6 +23,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 1vh;
   grid-row-gap: 1vh;
+  /* top row and bottom row smaller than your middle row */
   grid-template-rows: 20% 1fr 20%;
 }
 
